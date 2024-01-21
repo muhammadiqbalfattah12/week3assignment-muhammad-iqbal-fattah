@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Website 2.0.0 </title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link href="https://fonts.cdnfonts.com/css/house-on-mars" rel="stylesheet">
+
+    <!-- Menggunakan CDN karena lebih simple dan untuk sementara 
+        karena masib bingung denan alur kalau menggunakan cli tapi soon akan diperbaiki
+    -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1"></script>
+    
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                big: '#ffc21c',
+                tulisan: '#0f0f0e',
+                highlight: '#ffffff',
+                shadow: '#f0ad11',
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="scroll-smooth">
+    <!-- NAVBAR -->
+    <div class="sticky top-0 z-50 flex justify-between items-center m-0 bg-big py-1 bg-big shadow-lg shadow-amber-900 transition-all duration-300 ease-in-out">
+        <img src="/asset/logoipsum-282.svg" alt="logo" class="m-5 ml-10 mx-3">
+        <nav class="bg-shadow p-5 rounded-xl border-2">
+            <a href="#home" class="tracking-wide mx-8 hover:text-highlight"> Home </a>
+            <a href="#bio" class="tracking-wide mx-8 hover:text-highlight"> Biography</a>
+            <a href="#fav" class="tracking-wide mx-8 hover:text-highlight"> Favorite Tools </a>
+        </nav>
+        <button id="confettiButton" class="m-5 p-3 hover:bg-shadow rounded-full border-4"> Give Me Confetti! </button>
+    </div>
+    
+        <!-- HERO-->
+    <div  id="home" class="mt-10 mx-5 grid grid-cols-2 bg-highlight">
+    <img src="https://images.unsplash.com/photo-1505356822725-08ad25f3ffe4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="profile_photo" class="h-80 w-full bg-cover rounded-lg border-4">
+    <div class="ml-10">
+        <h4 class="font-serif mb-1 text-lg">Hello, welcome to my personal wesbite  </h4>
+        <h1 class="text-3xl"> Version 2.0.0 </h1>
+        <p class="mt-5 text-md font-serif tracking-tighter text-justify">Website ini mengambil inspirasi dari elemen-elemen visual yang sering dijumpai, khususnya KKV, Mr. DIY, dan Krisbow . Dengan tema yang diusulkan, website ini menonjolkan penggunaan warna hitam dan kuning, sementara typografi-nya ditampilkan dengan grafis yang kaku dan tegas, menciptakan kesan minimalis namun mencolok.</p>
+        <button class="mt-12 p-3 hover:bg-shadow rounded-full border-4 justify-items-center items-center w-full"> HIT ME </button>
+    </div>
+    </div>
+    <!-- Buffer -->
+    <div class="my-4 flex justify-between bg-big p-3">
+        <div class="element"> <h1 class="semi-bold text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui eos blanditiis magnam euber ladida marida  </h1></div>
+    </div>
+    <!-- Heading Biography -->
+    <div id="bio" class="flex justify-evenly mt-10">
+        <img src="https://plus.unsplash.com/premium_photo-1666697667376-6d6fc0f0d924?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo1" class="bg-shadow rounded-full h-20 w-20 border-2 border-shadow bg-big shadow-lg shadow-amber-900">
+        <h1 class="text-5xl underline underline-offset-8"> BIOGRAPHY </h1>
+        <img src="https://plus.unsplash.com/premium_photo-1666697667376-6d6fc0f0d924?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo1" class="bg-shadow rounded-full h-20 w-20 border-2 border-shadow bg-big shadow-lg shadow-amber-900">
+    </div>
+
+    <!-- BIOGRAPY-->
+    <div class="grid grid-cols-6 gap-5 m-10">
+        <div class="col-span-4 border-4 border-black rounded-xl bg-big shadow-lg shadow-amber-900">
+            <h1 class="m-3 font-serif"> Hello, I am</h1>
+            <p class="m-3 text-3xl text-center"> Muhammad Iqbal Fattah</p>
+            <p class="m-3 mt-4 font-serif tracking-tighter text-md text-justify"> Seorang individu berusia 22 tahun yang penuh semangat dalam menjelajahi dunia teknologi dan seni. Sebagai seseorang yang selalu ingin belajar, saya memiliki ketertarikan khusus dalam pengembangan perangkat lunak dan desain grafis. Selain itu, saya juga mengejar berbagai kesempatan untuk mengembangkan keterampilan dan pengetahuan saya. Saya percaya bahwa setiap hari adalah kesempatan untuk tumbuh dan mencapai potensi penuh. </p>
+        </div>
+        
+        <div class="col-span-3 md:col-span-1 border-4 border-black rounded-xl bg-shadow">
+            <p class="m-10 text-center text-xs"> Where I Live? </p>
+            <img src="https://i.natgeofe.com/n/a25e30a6-4081-41e0-a494-cdb469343b58/kids-beginners-world-edu-k-3-clip-1900x1900-gradient_4x3.jpg" alt="fakegps" class="h-1/2 mx-1.5 border-2 border-black rounded-xl">
+        </div>
+        
+        <div class="col-span-2 md:col-span-1 border-4 border-black rounded-xl bg-big shadow-lg shadow-amber-900">
+            <p class="m-5 text-center"> Birthday!</p>
+            <img src="./asset/birthday.svg" alt="" class="mx-auto h-1/2 w-1/2 ">
+            <h1 class="mt-5 text-xs text-center"> 16 March 2002 </h1>
+        </div>
+
+        <div class="col-span-2 border-4 border-black rounded-xl bg-shadow pb-10 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1456082902841-3335005c3082?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');"></div>
+        
+
+        <div class="col-span-6 md:col-span-4 border-4 border-black rounded-xl bg-big shadow-lg shadow-amber-900">
+            <h1 class="my-5 text-center"> "Tetap tersenyum meskipun, lu manyun" </h1>
+            <p class="m-5 tracking-tighter text-justify font-serif">Motto ini mengajak untuk tetap tersenyum bahkan dalam situasi sulit, menekankan pentingnya menjalani hidup dengan sikap positif dan optimis meskipun dihadapkan pada kesulitan atau tantangan. Dengan menggunakan kata "manyun," motto ini menggambarkan bahwa meski mungkin ada kekecewaan atau kesedihan, tetaplah mempertahankan semangat dan kebahagiaan melalui senyuman. Secara keseluruhan, motto ini mengajarkan tentang kekuatan sikap positif dalam menghadapi berbagai aspek kehidupan.</p>
+        </div>
+
+        <div class="col-span-1 border-4 border-black rounded-xl bg-big shadow-lg shadow-amber-900 hover:bg-highlight">
+            <a href="#ig" class="flex justify-start items-center"><img src="./asset/instagram.svg" alt="instagram" class="m-2">
+            <h3 class="text-xs"> Instagram </h3></a>
+        </div>
+        <div class="col-span-1 border-4 border-black rounded-xl bg-big shadow-lg shadow-amber-900 hover:bg-highlight">
+            <a href="#ig" class="flex justify-start items-center"><img src="./asset/x-solid.svg" alt="instagram" class="m-2">
+            <h3 class="text-xs"> X</h3></a>
+        </div>
+        <div class="col-span-1 border-4 border-black rounded-xl bg-big shadow-lg shadow-amber-900 hover:bg-highlight">
+            <a href="#ig" class="flex justify-start items-center"><img src="./asset/instagram.svg" alt="instagram" class="m-2">
+            <h3 class="text-xs"> DISCORD </h3></a>
+        </div>
+        <div class="col-span-1 border-4 border-black rounded-xl bg-big shadow-lg shadow-amber-900 hover:bg-highlight">
+            <a href="#ig" class="flex justify-start items-center"><img src="./asset/tiktok.svg" alt="instagram" class="m-2">
+            <h3 class="text-xs"> TIKTOK</h3></a>
+        </div>
+
+    </div>    
+
+    <!-- Buffer -->
+    <div class="my-4 flex justify-between bg-big p-3">
+        <div class="element"> <h1 class="semi-bold text-xs"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui eos blanditiis magnam euber ladida marida  </h1></div>
+    </div>
+
+    <!-- Heading Tools-->
+    <div id="fav" class="flex justify-evenly mt-10">
+        <img src="https://plus.unsplash.com/premium_photo-1666697667376-6d6fc0f0d924?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo1" class="bg-shadow rounded-full h-20 w-20 border-2 border-shadow bg-big shadow-lg shadow-amber-900">
+            <h1 class="text-5xl underline underline-offset-8">FAVORITE TOOLS</h1>
+        <img src="https://plus.unsplash.com/premium_photo-1666697667376-6d6fc0f0d924?q=80&w=2000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="photo1" class="bg-shadow rounded-full h-20 w-20 border-2 border-shadow bg-big shadow-lg shadow-amber-900">
+    </div>
+
+    <!-- Slider Container -->
+    <section>
+        <div class="flex">
+          <div class="w-2/12 flex items-center">
+            <div class="w-full text-right">
+              <button
+                onclick="prev()"
+                class="p-3 rounded-full bg-white border-gray-300 shadow-lg mr-5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="sliderContainer" class="w-10/12 overflow-hidden">
+            <ul id="slider" class="flex w-full">
+              <li class="p-5">
+                <div class="border rounded-lg p-5">
+                  <img
+                    class="h-50 w-full object-cover rounded-md"
+                    src="https://images.unsplash.com/photo-1682685797140-c17807f8f217?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Img1"
+                  />
+                  <h2 class="mt-2 text-lg font-bold text-gray-700">
+                    DEVSCALE PLATFORM
+                  </h2>
+                  <p class="mt-2 font-serif text-xs text-justify text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    rerum dolores id incidunt accusantium dicta earum.
+                    Consequuntur, tempora praesentium debitis saepe voluptatibus
+                    nemo cupiditate consequatur. Repellat aperiam natus a ullam!
+                  </p>
+                  <button
+                    class="mt-4 px-6 py-2 rounded-md bg-big text-sm text-tulisan tracking-wide font-bold"
+                  >
+                    Link App
+                  </button>
+                </div>
+              </li>
+              <li class="p-5">
+                <div class="border rounded-lg p-5">
+                  <img
+                    class="h-50 w-full object-cover rounded-md"
+                    src="https://images.unsplash.com/photo-1682687221006-b7fd60cf9dd0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Img1"
+                  />
+                  <h2 class="mt-2 text-lg font-bold text-gray-700">EXCALIDRAW</h2>
+                  <p class="mt-2 font-serif text-xs text-justify text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    rerum dolores id incidunt accusantium dicta earum.
+                    Consequuntur, tempora praesentium debitis saepe voluptatibus
+                    nemo cupiditate consequatur. Repellat aperiam natus a ullam!
+                  </p>
+                  <button
+                    class="mt-4 px-6 py-2 rounded-md bg-big text-sm text-tulisan tracking-wide font-bold"
+                  >
+                    Link App
+                  </button>
+                </div>
+              </li>
+              <li class="p-5">
+                <div class="border rounded-lg p-5">
+                  <img
+                    class="h-50 w-full object-cover rounded-md"
+                    src="https://images.unsplash.com/photo-1682695794816-7b9da18ed470?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHw2Nnx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Img1"
+                  />
+                  <h2 class="mt-2 text-lg font-bold text-gray-700">TAILWINDCSS </h2>
+                  <p class="mt-2 font-serif text-xs text-justify text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    rerum dolores id incidunt accusantium dicta earum.
+                    Consequuntur, tempora praesentium debitis saepe voluptatibus
+                    nemo cupiditate consequatur. Repellat aperiam natus a ullam!
+                  </p>
+                  <button
+                    class="mt-4 px-6 py-2 rounded-md bg-big text-sm text-tulisan tracking-wide font-bold"
+                  >
+                    Link App
+                  </button>
+                </div>
+              </li>
+              <li class="p-5">
+                <div class="border rounded-lg p-5">
+                  <img
+                    class="h-50 w-full object-cover rounded-md"
+                    src="https://images.unsplash.com/photo-1682695794947-17061dc284dd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzNnx8fGVufDB8fHx8fA%3D%3D"
+                    alt="Img1"
+                  />
+                  <h2 class="mt-2 text-lg font-bold text-gray-700">PINTEREST</h2>
+                  <p class="mt-2 font-serif text-xs text-justify text-gray-500">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                    rerum dolores id incidunt accusantium dicta earum.
+                    Consequuntur, tempora praesentium debitis saepe voluptatibus
+                    nemo cupiditate consequatur. Repellat aperiam natus a ullam!
+                  </p>
+                  <button
+                    class="mt-4 px-6 py-2 rounded-md bg-big text-sm text-tulisan tracking-wide font-bold"
+                  >
+                    Link App
+                  </button>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="w-2/12 flex items-center">
+            <div class="w-full">
+              <button
+                onclick="next()"
+                class="p-3 rounded-full bg-white border-gray-300 shadow-lg ml-5"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="w-6 h-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- FOOTER -->
+    <footer class="footer-1 bg-big font-serif py-10 sm:py-12">
+        <div class="container mx-auto px-4">
+          <div class="sm:flex sm:flex-wrap sm:-mx-4 md:py-4">
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6">
+              <h5 class="text-xl font-bold mb-6">Features</h5>
+              <ul class="list-none footer-links">
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Cool stuff</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Random feature</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team feature</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Stuff for developers</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Another one</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Last time</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 sm:mt-0">
+              <h5 class="text-xl font-bold mb-6">Resources</h5>
+              <ul class="list-none footer-links">
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Resource</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Resource name</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Another resource</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Final resource</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+              <h5 class="text-xl font-bold mb-6">About</h5>
+              <ul class="list-none footer-links">
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Locations</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Privacy</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Terms</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-4 sm:w-1/2 md:w-1/4 xl:w-1/6 mt-8 md:mt-0">
+              <h5 class="text-xl font-bold mb-6">Help</h5>
+              <ul class="list-none footer-links">
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Support</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Help Center</a>
+                </li>
+                <li class="mb-2">
+                  <a href="#" class="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="px-4 mt-4 sm:w-1/3 xl:w-1/6 sm:mx-auto xl:mt-0 xl:ml-auto">
+              <h5 class="text-xl font-bold mb-6 sm:text-center xl:text-left">Stay connected</h5>
+              <div class="flex sm:justify-center xl:justify-start">
+                <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 text-gray-600 hover:text-white hover:bg-blue-600 hover:border-blue-600">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-blue-400 hover:border-blue-400">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="w-8 h-8 border border-2 border-gray-400 rounded-full text-center py-1 ml-2 text-gray-600 hover:text-white hover:bg-red-600 hover:border-red-600">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    <script>
+        let sliderContainer = document.getElementById('sliderContainer');
+let slider = document.getElementById('slider');
+let cards = slider.getElementsByTagName('li');
+
+let elementToShow = 3;
+
+if(document.body.clientWidth<1000){
+    elementToShow = 1;
+} else if(document.body.clientWidth<1500){
+    elementToShow = 2;
+}
+let sliderContainerWidth = sliderContainer.clientWidth;
+
+let cardWidth = sliderContainerWidth/elementToShow;
+
+slider.style.width = cards.length*cardWidth+'px';
+slider.style.transition='margin';
+slider.style.transitionDuration ='1s';
+for (let i = 0; i < cards.length; i++) {
+    
+    const element = cards[i];
+    element.style.width = cardWidth+'px';
+}
+        function prev() {
+          if (+slider.style.marginLeft.slice(0, -2) != -cardWidth * (cards.length - elementToShow))
+            slider.style.marginLeft = ((+slider.style.marginLeft.slice(0, -2)) - cardWidth) + 'px'; //100px
+        }
+  
+        function next() {
+          if (+slider.style.marginLeft.slice(0, -2) != 0)
+            slider.style.marginLeft = ((+slider.style.marginLeft.slice(0, -2)) + cardWidth) + 'px'; //100px
+        }
+      </script>
+    <script type="module" src="../js/script.js"></script>
+</body>
+</html>
